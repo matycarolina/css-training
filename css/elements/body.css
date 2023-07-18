@@ -1,0 +1,18 @@
+body {
+    background: #CACACA;
+    font-family: "Neue Machina", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    color: #151515;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}

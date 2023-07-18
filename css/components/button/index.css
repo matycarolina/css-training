@@ -1,0 +1,34 @@
+.btn {
+    cursor: pointer;
+    background: #CACACA;
+    display: inline-block;
+    border: transparent;
+}
+
+.btn-light {
+    cursor: pointer;
+    color: #151515;
+    background: #F0F0F0;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.btn-dark {
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #151515;
+    display: inline-block;
+}
+
+.btn-light:hover {
+    background: #CACACA;
+}
+
+.btn-dark:hover {
+    color: #151515;
+    background: #FFFFFF;
+}
+
+.btn-block {
+    width: 100%;
+}
