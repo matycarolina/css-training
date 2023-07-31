@@ -1,0 +1,20 @@
+:root {
+  /* 360px */
+  --mobile: 22.5rem;
+  /* 1024px */
+  --tablet: 64rem;
+  /* 1440px */
+  --desktop: 90rem;
+  /* 2560px */
+  --wide-desktop: 160rem;
+
+  --black: #151515;
+  --white: #FFF;
+  --gray-1: #F0F0F0;
+  --gray-2: #CACACA;
+
+  --clr-primary-100: var(--white);
+  --clr-primary-200: var(--gray-1);
+  --clr-primary-300: var(--gray-2);
+  --clr-primary-900: var(--black);
+}
