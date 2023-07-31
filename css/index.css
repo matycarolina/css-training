@@ -1,15 +1,5 @@
+@import "settings/index.css";
 @import "fonts/index.css";
 @import "elements/index.css";
-
-/*Components*/
-@import "components/button/index.css";
-@import "components/header/index.css";
-
-/*Utils*/
+@import "components/index.css";
 @import "utils/index.css";
-
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
