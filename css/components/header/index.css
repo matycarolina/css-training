@@ -1,2 +1,3 @@
-
 @import "navbar/index.css";
+@import "navbar/auth/index.css";
+@import "navbar/nav-links/index.css";
