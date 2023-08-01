@@ -1,34 +1,28 @@
 .btn {
-    cursor: pointer;
-    background: #CACACA;
-    display: inline-block;
-    border: transparent;
+  --_text-color: var(--text-color, var(--clr-primary-900));
+  --_bg-color: var(--bg-color, var(--clr-primary-200));
+  --_text-accent-color: var(--text-color, var(--clr-primary-900));
+  --_bg-accent-color: var(--bg-accent-color, var(--clr-primary-100));
+
+  border: none;
+  border-radius: var(--radius-2);
+  background-color: var(--_bg-color);
+  padding-block: var(--size-2);
+  padding-inline: var(--size-3);
+  min-inline-size: var(--size-8);
+  color: var(--_text-color);
+  cursor: pointer;
 }
 
-.btn-light {
-    cursor: pointer;
-    color: #151515;
-    background: #F0F0F0;
-    display: inline-block;
-    margin-right: 20px;
+.btn:hover,
+.btn:focus {
+  background-color: var(--_bg-accent-color);
+  color: var(--_text-accent-color);
 }
 
-.btn-dark {
-    cursor: pointer;
-    color: #FFFFFF;
-    background: #151515;
-    display: inline-block;
-}
-
-.btn-light:hover {
-    background: #CACACA;
-}
-
-.btn-dark:hover {
-    color: #151515;
-    background: #FFFFFF;
-}
-
-.btn-block {
-    width: 100%;
+.btn-accent {
+  --_text-color: var(--text-color, var(--clr-primary-100));
+  --_bg-color: var(--bg-color, var(--clr-primary-900));
+  --_text-accent-color: var(--text-color, var(--clr-primary-900));
+  --_bg-accent-color: var(--bg-accent-color, var(--clr-primary-100));
 }
