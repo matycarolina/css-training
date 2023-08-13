@@ -1,15 +1,10 @@
-const getElement = (selector) => {
-    const element = document.querySelector(selector)
-  
-    if (element) return element
-    throw Error(
-      `Please double check your class names, there is no ${selector} class`
-    )
-  }
-  
-  const links = getElement('.nav-links')
-  const navBtnDOM = getElement('.nav-btn')
-  
-  navBtnDOM.addEventListener('click', () => {
-    links.classList.toggle('show-links')
-  })
+const maybeQuery = (fn, ...args) =>
+  [...document.querySelectorAll(...args)]
+    .slice(0, 1)
+    .forEach(fn)
+
+maybeQuery((btn) => btn.addEventListener("click", () => {
+  const ariaAttr = "aria-expanded";
+  const isExpanded = btn.getAttribute(ariaAttr) == "true";
+  btn.setAttribute(ariaAttr, !isExpanded);
+}), "#mobile-toggle-menu");
