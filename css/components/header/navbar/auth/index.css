@@ -1,0 +1,22 @@
+.header_main-navbar_auth {
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-2);
+  }
+
+  .header_main-navbar_auth .btn {
+    inline-size: 100%;
+  }
+
+  @media screen and (min-width: 22.5rem) {
+    .header_main-navbar_auth {
+      flex-direction: row;
+    }
+  }
+
+  @media screen and (min-width: 22.5rem) {
+    .header_main-navbar_auth .btn {
+      inline-size: auto;
+      min-inline-size: var(--size-12);
+    }
+  }

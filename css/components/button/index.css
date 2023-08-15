@@ -1,0 +1,28 @@
+.btn {
+  --_text-color: var(--text-color, var(--clr-primary-900));
+  --_bg-color: var(--bg-color, var(--clr-primary-200));
+  --_text-accent-color: var(--text-color, var(--clr-primary-900));
+  --_bg-accent-color: var(--bg-accent-color, var(--clr-primary-100));
+
+  border: none;
+  border-radius: var(--radius-2);
+  background-color: var(--_bg-color);
+  padding-block: var(--size-2);
+  padding-inline: var(--size-3);
+  min-inline-size: var(--size-8);
+  color: var(--_text-color);
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--_bg-accent-color);
+  color: var(--_text-accent-color);
+}
+
+.btn-accent {
+  --_text-color: var(--text-color, var(--clr-primary-100));
+  --_bg-color: var(--bg-color, var(--clr-primary-900));
+  --_text-accent-color: var(--text-color, var(--clr-primary-900));
+  --_bg-accent-color: var(--bg-accent-color, var(--clr-primary-100));
+}
